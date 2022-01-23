@@ -1,3 +1,7 @@
+package Pets;
+
+import absract_classes.Pet;
+
 public class Cat extends Pet {
 
     private int countPet = 0;
@@ -11,8 +15,10 @@ public class Cat extends Pet {
         ++this.countPet;
     }
 
+
+
     @Override
-    public void say(){
-        System.out.println("Meow");
+    public String say() {
+        return "Meow";
     }
 }

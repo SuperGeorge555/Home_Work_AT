@@ -1,4 +1,8 @@
-public class Dog extends Pet{
+package Pets;
+
+import absract_classes.Pet;
+
+public class Dog extends Pet {
 
     public Dog() {
     }
@@ -8,7 +12,7 @@ public class Dog extends Pet{
     }
 
     @Override
-    public void say() {
-        System.out.println("Woof");
+    public String say() {
+        return "Woof";
     }
 }
