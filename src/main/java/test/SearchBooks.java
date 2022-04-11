@@ -30,10 +30,15 @@ public class SearchBooks {
         {
             System.out.println("we find him");
         }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         List<WebElement> webElements = driver.findElements(By.xpath("//section[@class= 'ik']"));
 
-        driver.close();
         System.out.println("Найдено книг: " + webElements.size());
-
+        driver.close();
     }
 }

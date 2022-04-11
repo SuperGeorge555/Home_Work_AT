@@ -10,7 +10,6 @@ import java.util.List;
 
 public class FindFiltr {
     public static void main(String[] args) {
-
         /*
         Задаем путь до вебдрайвера в системные переменные
         Если драйвер не подходит скачиваем подходящий тут https://chromedriver.chromium.org/downloads
@@ -25,7 +24,7 @@ public class FindFiltr {
 
         driver.get("https://www.ozon.ru/seller/rus-velikaya-77277/knigi-16500/?miniapp=seller_77277");
 
-        String className = "filter-block";
+        String className = "w3r filter-block";
         WebElement element = driver.findElement(By.className(className));
         if(element != null)
         {
@@ -35,6 +34,5 @@ public class FindFiltr {
 
         driver.close();
         System.out.println("Найдено элементов: " + webElements.size());
-
     }
 }
